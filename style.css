@@ -21,5 +21,9 @@ body {
     height: 100vh;
     background-color: #020305;
 
-
+    background-image:
+     linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px),
+     linear-gradient(90deg, rgba(0, 243, 255, 0.05) 1px, transparent 1px);
+    background-size:30px 30px;
+    position: relative;
 }
