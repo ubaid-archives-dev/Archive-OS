@@ -27,3 +27,19 @@ body {
     background-size:30px 30px;
     position: relative;
 }
+
+#taskbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 5, 15, 0.9);
+    border-top: var(--system-border);
+    box-shadow: 0 -5px 15px rgba(0, 243, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: var(--neon-blue)
+    z-index: 9999;
+}
