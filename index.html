@@ -8,24 +8,28 @@
 </head>
 <body>
   <main id="desktop">
+    <video autoplay loop muted playsinline id="live-wallpaper">
+        <source src="assests/solo-leveling.mp4" type="video/mp4">
+    </video>
+
     <div class="os-window holographic" id="window-1">
       <div class="title-bar" id="title-bar-1">
         <span>[SYSTEM NOTIFICATION]</span>
         <button class="close-btn">[X]</button>
-    </div>
-    <div class="Window-Content">
-      <h2>WELCOME, PLAYER.</h2>
-      <p>The system has been intialized. Your OS is ready to use.</p>
-    </div>
-   </div> 
+      </div>
+      <div class="window-content">
+        <h2>WELCOME, PLAYER.</h2>
+        <p>The system has been initialized. Your OS is ready to use.</p>
+      </div>
+    </div> 
   </main>
 
   <footer id="taskbar">
     <button id="start-btn"> AWAKEN</button>
-    <div id="taskbar-apps">
-
-    </div>
+    <div id="taskbar-apps"></div>
     <div id="clock"> 00:00:00</div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
