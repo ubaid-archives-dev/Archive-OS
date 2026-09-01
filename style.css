@@ -33,6 +33,7 @@ body {
     object-fit: cover;
     z-index: 0;
     opacity: 0.6;
+    filter:blur(8px)
 }
 
 #taskbar {
