@@ -15,21 +15,54 @@
     <div class="os-window holographic" id="window-1">
       <div class="title-bar" id="title-bar-1">
         <span>[SYSTEM NOTIFICATION]</span>
-        <button class="close-btn">[X]</button>
+        <button class="close-btn" id="close-1">[X]</button>
       </div>
       <div class="window-content">
         <h2>WELCOME, PLAYER.</h2>
         <p>The system has been initialized. Your OS is ready to use.</p>
       </div>
     </div> 
-  </main>
+
+    <div class="os-windows holographic app-window" id="decision-window" style="display: none;">
+      <div class="title-bar" id="decision-title-bar">
+        <span>[SYSTEM EVALUATOR: DECISION MATRIX]</span>
+        <button class="close-btn" id="decision-close-btn">[X]</button>
+    </div>
+    <div class="window-content decision-content"> 
+      <input type="text" id="decision-input" placeholder="Enter decision or delima......." />
+
+      <div class="matrix-grid">
+        <div class="matrix-column">
+          <h3>PROS (+)</h3>
+          <textarea id="pros-input" placeholder="Add advantages (one per line )...."></textarea>
+        </div>
+        <div class="matrix-column">
+          <h3>CONS (-)</h3>
+          <textarea id="cons-input" placeholder="Add risks/Drawbacks (one per line )...."></textarea>
+      </div>
+    </div>
+
+    <button id="Evaluate-btn">EVALUATE PATH</button>
+    <div id="decision-verdict" class="verdict-box">System idle. Awaiting data......</div>
+   </div>
+ </div>
+</main>
+
 
   <footer id="taskbar">
-    <button id="start-btn"> AWAKEN</button>
+    <div class="taskbar-left">
+      <button id="start-btn"> AWAKEN</button>
     <div id="taskbar-apps"></div>
-    <div id="clock"> 00:00:00</div>
-  </footer>
+    <button class="taskbar-icon" id="open-decision-btn" title="Decision Matrix">⚖️</button>
+        <a href="https://github.com" target="_blank" class="taskbar-icon" title="GitHub">🐙</a>
+        <a href="https://pinterest.com" target="_blank" class="taskbar-icon" title="Pinterest">📌</a>
+        <a href="https://open.spotify.com" target="_blank" class="taskbar-icon" title="Spotify">🎵</a>
+        <a href="https://colab.research.google.com" target="_blank" class="taskbar-icon" title="Google Colab">⚡</a>
+    </div>
+  </div>
+  <div id="clock"> 00:00:00</div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

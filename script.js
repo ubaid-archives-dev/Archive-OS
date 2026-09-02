@@ -2,7 +2,7 @@ const osWindow = document.getElementById('window-1');
 const titleBar = document.getElementById('title-bar-1');
 const closeBtn = document.querySelector('.close-btn');
 const clock = document.getElementById('clock');
-const startBtn = document.getElementById('start-btn'); 
+const startBtn = document.getElementById('start-btn'); ~
 
 setInterval(() => {
     const now = new Date();
