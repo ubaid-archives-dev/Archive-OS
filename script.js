@@ -1,8 +1,16 @@
 const osWindow = document.getElementById('window-1');
 const titleBar = document.getElementById('title-bar-1');
-const closeBtn = document.querySelector('.close-btn');
+const closeBtn = document.getElementById('close-1');
 const clock = document.getElementById('clock');
-const startBtn = document.getElementById('start-btn'); ~
+const startBtn = document.getElementById('start-btn'); 
+
+const decisionWindow = document.getElementById('decision-window');
+const decisionTitleBar = document.getElementById('decision-title-bar');
+const openDecisionBtn = document.getElementById('open-decision-btn');
+const closeDecisionBtn = document.getElementById('decision-close-btn');
+const evaluateBtn = document.getElementById('evaluate-btn');
+const verdictBox = document.getElementById('decision-verdict');
+
 
 setInterval(() => {
     const now = new Date();
